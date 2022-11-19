@@ -1,19 +1,50 @@
+@font-face {
+    font-family: fahwang-regular;
+    src: url(source/Fahkwang/Fahkwang-Regular.ttf);
+}
+@font-face {
+    font-family: audiowide; 
+    src: url(source/Audiowide-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
+    font-size: 16pt;
+}
+
+h1 {
+    font-family: 'audiowide';
+    font-weight: 400;
+    font-size: 3vw;
+    color: #e0e0e0;
 }
 
 body {
     background-color: #000000;
     margin: 0;
+    font-size: 16pt;
 }
 
-footer {
-    margin: 0 200px;
+.photographer {
+    color: #e0e0e0;
+    background-color: #696868a1;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+}
+
+.photographer a {
+    color: #c082dd;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .container {
     background-color: #e0e0e0;
-    margin: 0 200px;
+    margin: 0 100px;
     display: flex;
     min-height: 100vh;
 }
@@ -21,7 +52,12 @@ footer {
 .hero{
     background-image: url(images/sky-scrapers.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 60%;
 }
 
 .main {
@@ -29,4 +65,20 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 50px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: #3223499c;
+    color: #ffffff;
+}
+
+.logo img {
+    height: 6vw;
+    margin: 0 15px;
 }
