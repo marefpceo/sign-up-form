@@ -9,7 +9,8 @@
 
 * {
     box-sizing: border-box;
-    font-size: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;    
 }
 
 h1 {
@@ -19,27 +20,14 @@ h1 {
     color: #e0e0e0;
 }
 
+h2 {
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
 body {
-    background-color: #000000;
+    background-color: #7c6e83;
     margin: 0;
-    font-size: 16pt;
-}
-
-.photographer {
-    color: #e0e0e0;
-    background-color: #696868a1;
-    height: 50px;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 15px;
-    text-align: center;
-}
-
-.photographer a {
-    color: #c082dd;
-    text-decoration: none;
-    font-weight: 500;
 }
 
 .container {
@@ -60,14 +48,6 @@ body {
     gap: 60%;
 }
 
-.main {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 50px;
-}
-
 .logo {
     display: flex;
     justify-content: center;
@@ -82,3 +62,93 @@ body {
     height: 6vw;
     margin: 0 15px;
 }
+
+.photographer {
+    color: #e0e0e0;
+    background-color: #696868a1;
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+}
+
+.photographer a, .main-bottom a {
+    color: #c082dd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 2px;
+}
+
+.main-top * {
+    font-size: 1.3rem;
+    padding: 30px;
+    flex: auto;
+}
+.main-top em {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    flex: auto;
+    width: 100%;
+    padding: 0 30px;
+    box-shadow: 1px 1px 10px 0px #aaa9aa;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    height: 3vh;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 25%); 
+    column-gap: 5rem;
+}
+
+fieldset p{
+    display: grid;
+    height: 1rem;
+}
+
+label, input {
+    font-size: 0.9rem;
+}
+
+input {
+    border: 1pt solid #e5e7eb;
+    border-radius: 5px;
+}
+
+input:focus{
+    border: 1px solid #c082dd;
+    outline: none;
+    box-shadow: 1px 2px 5px 3px #aaa9aa;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    background: #9197e2;
+    color: #19191a;
+    width: 10.2rem;
+    height: 2.3rem;
+    box-shadow: 1px 2px 5px 1px #aaa9aa;
+}
+
+.main-bottom {
+    flex: auto;
+    margin: 0;
+    padding: 30px;
+}
+
+

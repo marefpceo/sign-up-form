@@ -22,35 +22,49 @@
             </div>
         </section>
         <section class='main'>
-            <header>
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.
-            </header>
-            <form action='' method='post'>
+            <div class='main-top'>
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br/> <br/> You <em>know</em> you want to.
+                </p>
+            </div>
+            <form action='' method='post' id="form1">
+                <h2>Let's do this!</h2>
                 <fieldset>
-                    <h2>Let's do this!</h2>
+                    <p>
+                        <label for='first_name'>FIRST NAME</label>
+                        <input type='text' name='first_name' id='first_name'/>
+                    </p>
 
-                    <label for='first_name'>FIRST NAME</label>
-                    <input type='text' name='first_name' id='first_name'/>
+                    <p>
+                        <label for='last_name'>LAST NAME</label>
+                        <input type='text' name='last_name' id='last_name'/>
+                    </p>
 
-                    <label for='last_name'>LAST NAME</label>
-                    <input type='text' name='last_name' id='last_name'/>
+                    <p>
+                        <label for='email'>EMAIL</label>
+                        <input type='email' name='email' id='email'/>
+                    </p>
 
-                    <label for='email'>EMAIL</label>
-                    <input type='email' name='email' id='email'/>
+                    <p>
+                        <label for='phone'>PHONE NUMBER</label>
+                        <input type='tel' name='phone' id='phone'/>
+                    </p>
 
-                    <label for='phone'>PHONE NUMBER</label>
-                    <input type='tel' name='phone' id='phone'/>
+                    <p>
+                        <label for='password'>PASSWORD</label>
+                        <input type='password' name='password' id='password'/>
+                    </p>
 
-                    <label for='password'>PASSWORD</label>
-                    <input type='password' name='password' id='password'/>
-
-                    <label for='confirm_pass'>CONFIRM PASSWORD</label>
-                    <input type='password' name='confirm_pass' id='confirm_pass'/>  
+                    <p>
+                        <label for='confirm_pass'>CONFIRM PASSWORD</label>
+                        <input type='password' name='confirm_pass' id='confirm_pass'/>
+                    </p>
                 </fieldset>
-
-                <button>Create Account</button>
-                <p>Already have and account? <a href='#'>Log in</a></p>
             </form>
+
+            <div class="main-bottom">
+                <button type="submit" form="form1">Create Account</button>
+                <p>Already have and account? <a href='#'>Log in</a></p>
+            </div>
         </section>
 
     </div>
