@@ -1,10 +1,8 @@
-@font-face {
-    font-family: fahwang-regular;
-    src: url(source/Fahkwang/Fahkwang-Regular.ttf);
-}
+/********** Global styles **********/
+/***********************************/
 @font-face {
     font-family: audiowide; 
-    src: url(source/Audiowide-Regular.ttf);
+    src: url("source/Audiowide-Regular.ttf");
 }
 
 * {
@@ -13,6 +11,9 @@
     font-size: 14pt;    
 }
 
+
+/********** General  styles **********/
+/*************************************/
 h1 {
     font-family: 'audiowide';
     font-weight: 400;
@@ -30,15 +31,26 @@ body {
     margin: 0;
 }
 
+/* Wrapper conatiner that streches full height */
 .container {
     background-color: #e0e0e0;
-    margin: 0 100px;
+    margin: 0 5rem;
     display: flex;
     min-height: 100vh;
 }
 
+/* Styling for links */
+.photographer a,
+.main-bottom a {
+    color: #c082dd;
+    text-decoration: 0;
+    font-weight: 500;
+}
+
+/********** Title-Logo-Hero styles **********/
+/********************************************/
 .hero{
-    background-image: url(images/sky-scrapers.jpg);
+    background-image: url("images/sky-scrapers.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 40%;
@@ -56,6 +68,7 @@ body {
     width: 100%;
     background-color: #3223499c;
     color: #ffffff;
+    margin-top: 90px;
 }
 
 .logo img {
@@ -74,12 +87,9 @@ body {
     text-align: center;
 }
 
-.photographer a, .main-bottom a {
-    color: #c082dd;
-    text-decoration: none;
-    font-weight: 500;
-}
 
+/********** Main Section styles **********/
+/*****************************************/
 .main {
     width: 60%;
     display: flex;
@@ -90,9 +100,10 @@ body {
 
 .main-top * {
     font-size: 1.3rem;
-    padding: 30px;
+    padding: 50px 30px;
     flex: auto;
 }
+
 .main-top em {
     margin: 0;
     padding: 0;
@@ -109,7 +120,7 @@ fieldset {
     margin: 0;
     padding: 0;
     height: 3vh;
-    border: none;
+    border: 0;
     display: grid;
     grid-template-columns: repeat(2, 25%); 
     column-gap: 5rem;
@@ -120,7 +131,8 @@ fieldset p{
     height: 1rem;
 }
 
-label, input {
+label,
+input {
     font-size: 0.9rem;
 }
 
@@ -131,22 +143,20 @@ input {
 
 input:focus{
     border: 1px solid #c082dd;
-    outline: none;
+    outline: 0;
     box-shadow: 1px 2px 5px 3px #aaa9aa;
 }
 
-button {
-    border-radius: 5px;
-    border: none;
-    background: #9197e2;
-    color: #19191a;
-    width: 10.2rem;
-    height: 2.3rem;
-    box-shadow: 1px 2px 5px 1px #aaa9aa;
+fieldset > p > span {
+    color: #ff0000;
+    font-size: .7rem;
+    margin-top: 2px;
 }
 
-.error, .error:focus {
-    border: 1px solid red;
+.error,
+.error:focus {
+    /* Sets red 1px solid border for non-matching password fields */
+    border: 1px solid #ff0000;
 }
 
 .main-bottom {
@@ -155,4 +165,21 @@ button {
     padding: 30px;
 }
 
+button {
+    border-radius: 5px;
+    border: 0;
+    background: #9197e2;
+    color: #19191a;
+    width: 10.2rem;
+    height: 2.3rem;
+    box-shadow: 1px 2px 5px 1px #aaa9aa;
+}
 
+button:active {
+    transform: scale(95%);
+}
+
+button:hover {
+    background: #a3a9ff;
+    font-weight: 500;
+}

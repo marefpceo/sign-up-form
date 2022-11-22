@@ -6,7 +6,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <title>Sign-Up Form</title>
     <link rel='stylesheet' href='style.css'/>
-    <script src='script.js'></script>
+    <script src='script.js' defer></script>
 </head>
 <body>
     <div class='container'>
@@ -26,43 +26,44 @@
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br/> <br/> You <em>know</em> you want to.
                 </p>
             </div>
-            <form action='' method='post' id="form1">
+            <form action='#' method='get' name="form1" id="form1">
                 <h2>Let's do this!</h2>
                 <fieldset>
                     <p>
                         <label for='first_name'>FIRST NAME</label>
-                        <input type='text' name='first_name' id='first_name'/>
+                        <input type='text' name='first_name' id='first_name' minlength='3' required/>
                     </p>
 
                     <p>
                         <label for='last_name'>LAST NAME</label>
-                        <input type='text' name='last_name' id='last_name'/>
+                        <input type='text' name='last_name' id='last_name' minlength='3' required/>
                     </p>
 
                     <p>
                         <label for='email'>EMAIL</label>
-                        <input type='email' name='email' id='email'/>
+                        <input type='email' name='email' id='email' placeholder='your@email.com' minlength='3' required/>
                     </p>
 
                     <p>
                         <label for='phone'>PHONE NUMBER</label>
-                        <input type='tel' name='phone' id='phone'/>
+                        <input type='tel' name='phone' id='phone' placeholder="ex. 123-456-7890"   required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
                     </p>
 
                     <p>
                         <label for='password'>PASSWORD</label>
-                        <input type='password' class='error' name='password' id='password'/>
+                        <input type='password' class='error' name='password' id='password' autocomplete='off' required/>
+                        <span>*Passwords do not match</span>
                     </p>
 
                     <p>
                         <label for='confirm_pass'>CONFIRM PASSWORD</label>
-                        <input type='password' class='error' name='confirm_pass' id='confirm_pass'/>
+                        <input type='password' class='error' name='confirm_pass' id='confirm_pass' autocomplete='off' required/>
                     </p>
                 </fieldset>
             </form>
 
             <div class="main-bottom">
-                <button type="submit" form="form1">Create Account</button>
+                <button type="button" id="submitBtn" form="form1">Create Account</button>
                 <p>Already have and account? <a href='#'>Log in</a></p>
             </div>
         </section>
